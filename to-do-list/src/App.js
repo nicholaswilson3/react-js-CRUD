@@ -4,6 +4,7 @@ import './App.css';
 import ListItems from './ListItems';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {faTrash} from '@fortawesome/free-solid-svg-icons';
+import NavBar from './NavBar';
 
 library.add(faTrash);
 
@@ -64,7 +65,9 @@ class App extends React.Component{
   render() {
     return (
       <div className="App">
+        <NavBar />
       <header>
+      
         <form id="to-do-form" onSubmit={this.addItem}>
           <input type="text" placeholder="Enter Text"
           value={this.state.currentItem.text}

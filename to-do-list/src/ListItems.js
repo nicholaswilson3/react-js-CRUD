@@ -28,7 +28,7 @@ function ListItems(props){
         })
         return(
             <div>
-                <FlipMove duration={300} easing="ease-in-out">
+                <FlipMove duration={1000} easing="ease-in-out">
                 {listItems}
                 </FlipMove>
                 </div>
